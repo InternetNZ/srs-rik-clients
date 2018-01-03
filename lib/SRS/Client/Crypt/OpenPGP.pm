@@ -32,7 +32,7 @@ use strict;
 use warnings;
 use Carp;
 
-use Crypt::OpenPGP 1.09;
+use Crypt::OpenPGP v1.09;
 use Encode;
 use Encoding::FixLatin qw(fix_latin);
 use utf8;
