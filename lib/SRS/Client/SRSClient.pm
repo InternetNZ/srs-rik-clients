@@ -29,6 +29,7 @@ use Carp;
 
 use SRS::Client::Versions;
 use SRS::Client::Options::SRSClient;
+use SRS::Client::Legacy::Translator;
 
 use base 'SRS::Client';
 
