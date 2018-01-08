@@ -24,7 +24,7 @@ use warnings;
 use strict;
 
 use FindBin;
-use lib "$FindBin::Bin/lib";
+use lib "$FindBin::Bin/../lib";
 
 use SRS::Client::SRSClient;
 
@@ -198,7 +198,7 @@ The I<n> should be a positive integer.
 * B<Locked_date_from>: Initial date for queries on domains locked after this date. All date fields need to be in the format: 
 'dd/mm/yyyy,hh::mm::ss' (Seconds are optional) For example:
 
-    Locked_date_from: 28/05/2002,12:30
+    Locked_date_from: 29/05/2002,12:30
     (indicates a date from 29/05/2002, 12:30pm)
 
 * B<Locked_date_to>: End date for queries on domains locked before this date.
@@ -322,6 +322,8 @@ The '+' is optional and an extra '-' can optionally be placed in the local_numbe
 
 * B<Registrant_fax>: Fax number of the registrant, in the same format as Registrant_phone.
 
+* B<Registrant_privacy>: Registrant privacy flag. '0' indicates false, '1' indicates true.
+
 * B<Registrant_address1>: Address line 1 of the registrant
 
 * B<Registrant_address2>: Address line 2 of the registrant
@@ -367,19 +369,19 @@ Eg. The Administrative Contact Name is specified with the 'Admin_name' field.
 
 =head2 Example 1: current details of a domain
 
-Transaction: DomainDetailsQry
-Domain_Name_Filter: testdomain.net.nz
-Field_list: Status,NameServers,RegistrantContact,RegisteredDate,AdminContact,TechnicalContact,LockedDate,Delegate,RegistrarId,RegistrarName
+ Transaction: DomainDetailsQry
+ Domain_Name_Filter: testdomain.net.nz
+ Field_list: Status,NameServers,RegistrantContact,RegisteredDate,AdminContact,TechnicalContact,LockedDate,Delegate,RegistrarId,RegistrarName
 
 =head2 Example 2: transfer and renew domain
 
-Transaction: DomainUpdate
-Action_ID: transfer_renew_test_102610200401
-Domain_Name_Filter: test.co.nz
-billing_term: 10
-UDAI: er9EU6Ut
-Renew_now: 1
-audit_text: "transfer and renew domain for 10 months"
+ Transaction: DomainUpdate
+ Action_ID: transfer_renew_test_102610200401
+ Domain_Name_Filter: test.co.nz
+ billing_term: 10
+ UDAI: er9EU6Ut
+ Renew_now: 1
+ audit_text: "transfer and renew domain for 10 months"
 
 B<For more examples refer to the 'templates' folder in the RIK>
 
