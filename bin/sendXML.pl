@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #--------------------------------------------------------------------------------------------------
 #
-# Copyright 2002-2011 NZ Registry Services
+# Copyright 2002-2018 Internet New Zealand Inc.
 #
 # This file is part of the SRS Registrar Kit
 #
