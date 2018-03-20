@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------------------
 # SRS::Client::Comms::XML
 #----------------------------------------------------------------------------------------
-# Copyright 2002-2004 NZ Registry Services
+# Copyright 2002-2018 Internet New Zealand Inc.
 #
 # This file is part of the Shared Registry System
 #
