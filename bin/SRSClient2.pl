@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #--------------------------------------------------------------------------------------------------
 #
-# Copyright 2002-2004 NZ Registry Services
+# Copyright 2002-2018 Internet New Zealand Inc.
 #
 # This file is part of the SRS Registrar Kit
 #
@@ -223,7 +223,7 @@ The I<n> should be a positive integer.
 
 * B<Trans_date_to>: End date for queries on transactions before this date.
 
-* B<source_ip>: Specify to NZRS where this whois request came from
+* B<source_ip>: Specify to InternetNZ where this whois request came from
 
 * B<full_result>: Defaults to True. A value of 0 in this field will return only the domain name and availability status for a whois query.
 
